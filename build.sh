@@ -22,10 +22,10 @@ cp ../framework/Source/*.h Release-iphone/include
 cp ../framework/Source/iOS/*.h Release-iphone/include
 
 # Build static framework
-mkdir -p GPUImage.framework/Versions/A
-cp Release-iphone/lib/libGPUImage.a GPUImage.framework/Versions/A/GPUImage
-mkdir -p GPUImage.framework/Versions/A/Headers
-cp Release-iphone/include/*.h GPUImage.framework/Versions/A/Headers
-ln -sfh A GPUImage.framework/Versions/Current
-ln -sfh Versions/Current/GPUImage GPUImage.framework/GPUImage
-ln -sfh Versions/Current/Headers GPUImage.framework/Headers
+mkdir -p ../dist/GPUImage.framework/Versions/A
+cp Release-iphone/lib/libGPUImage.a ../dist/GPUImage.framework/Versions/A/GPUImage
+mkdir -p ../dist/GPUImage.framework/Versions/A/Headers
+cp Release-iphone/include/*.h ../dist/GPUImage.framework/Versions/A/Headers
+ln -sfh A ../dist/GPUImage.framework/Versions/Current
+ln -sfh Versions/Current/GPUImage ../dist/GPUImage.framework/GPUImage
+ln -sfh Versions/Current/Headers ../dist/GPUImage.framework/Headers

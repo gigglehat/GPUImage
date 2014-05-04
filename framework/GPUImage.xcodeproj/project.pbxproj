@@ -1361,6 +1361,7 @@
 				BCF1A33014DDB1EC00852800 /* Sources */,
 				BCF1A33114DDB1EC00852800 /* Frameworks */,
 				BCF1A33214DDB1EC00852800 /* Headers */,
+				359080AB1916C99E00D10E4C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1430,6 +1431,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		359080AB1916C99E00D10E4C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/bash;
+			shellScript = "TARGET_FILE=\"${PROJECT_DIR}/build.sh\"\n\ncd \"$(dirname \"$TARGET_FILE\")\"\nTARGET_FILE=\"$(basename \"$TARGET_FILE\")\"\n\n# Iterate down a (possible) chain of symlinks\nwhile [ -L \"$TARGET_FILE\" ]\ndo\nTARGET_FILE=\"$(readlink \"$TARGET_FILE\")\"\ncd \"$(dirname \"$TARGET_FILE\")\"\nTARGET_FILE=\"$(basename \"$TARGET_FILE\")\"\ndone\n\n# Compute the canonicalized name by finding the physical path\n# for the directory we're in\nPHYS_DIR=\"$(pwd -P)\"\n\ncd \"$PHYS_DIR\"\n\"$PHYS_DIR\"/\"$TARGET_FILE\"\n";
+		};
 		BC552B3A1558C6FC001F3FFA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
