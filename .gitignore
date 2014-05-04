@@ -1,7 +1,6 @@
 # Exclude the build directory
-build/*
-dist/*
-examples/FilterShowcase/build*
+build
+dist
  
 # Exclude temp nibs and swap files
 *~.nib
