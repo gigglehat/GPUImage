@@ -2,7 +2,9 @@
 
 set -e
 
-IOSSDK_VER="7.0"
+IOSSDK_ROOT="${SDKROOT##*/}"
+IOSSDK_NAME="${IOSSDK_ROOT%.*}"
+IOSSDK_VER="${IOSSDK_NAME##iphoneos}"
 
 # xcodebuild -showsdks
 
