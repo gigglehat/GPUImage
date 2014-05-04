@@ -17,7 +17,9 @@ examples/FilterShowcase/build*
 *.perspective
 *.perspectivev3
 *.pbxuser
-*.xcworkspace
+*.xccheckout
+# *.xcworkspace
+project.xcworkspace
 xcuserdata
 
 # Documentation
