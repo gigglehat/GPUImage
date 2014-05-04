@@ -7,4 +7,58 @@
    <FileRef
       location = "container:framework/GPUImage.xcodeproj">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "Examples">
+      <Group
+         location = "container:"
+         name = "Mac">
+         <FileRef
+            location = "group:examples/Mac/SimplePhotoFilter/SimplePhotoFilter.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/Mac/FilterShowcase/FilterShowcase.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/Mac/MultiViewFilterExample/MultiViewFilterExample.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "iOS">
+         <FileRef
+            location = "group:examples/iOS/SimpleVideoFilter/SimpleVideoFilter.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/iOS/SimpleVideoFileFilter/SimpleVideoFileFilter.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/iOS/SimplePhotoFilter/SimplePhotoFilter.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/iOS/SimpleImageFilter/SimpleImageFilter.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/iOS/RawDataTest/RawDataTest.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/iOS/MultiViewFilterExample/MultiViewFilterExample.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/iOS/FilterShowcase/FilterShowcase.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/iOS/FeatureExtractionTest/FeatureExtractionTest.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/iOS/CubeExample/CubeExample.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/iOS/ColorObjectTracking/ColorObjectTracking.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:examples/iOS/BenchmarkSuite/BenchmarkSuite.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
 </Workspace>
