@@ -2,15 +2,16 @@
 
 set -e
 
-IOSSDK_ROOT="${SDKROOT##*/}"
-IOSSDK_NAME="${IOSSDK_ROOT%.*}"
-IOSSDK_VER="${IOSSDK_NAME##iphoneos}"
+# Specify latest version of SDK implicitly instead of trying to determine version number.
+# IOSSDK_ROOT="${SDKROOT##*/}"
+# IOSSDK_NAME="${IOSSDK_ROOT%.*}"
+# IOSSDK_VER="${IOSSDK_NAME##iphoneos}"
 
 # xcodebuild -showsdks
 
 cd framework
-xcodebuild -project GPUImage.xcodeproj -target GPUImage -configuration Release -sdk iphoneos${IOSSDK_VER} build
-xcodebuild -project GPUImage.xcodeproj -target GPUImage -configuration Release -sdk iphonesimulator${IOSSDK_VER} build
+xcodebuild -project GPUImage.xcodeproj -target GPUImage -configuration Release -sdk iphoneos build
+xcodebuild -project GPUImage.xcodeproj -target GPUImage -configuration Release -sdk iphonesimulator build
 cd ..
 
 cd build
